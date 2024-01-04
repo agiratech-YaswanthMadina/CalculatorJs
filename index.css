@@ -1,0 +1,113 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    background: linear-gradient(#8BD0D0, #C9FCFC);
+}
+    .rule {
+        border-width: 1px;
+        border-color: #5a7184;
+        border-style: solid;
+        width: 350px;
+    }
+.heading{
+    font-size: 50px;
+    font-weight: 500;
+}
+.adjustment{
+    font-size: 25px;
+    text-align: center;
+
+}
+.last-column {
+    margin: 7px;
+    margin-bottom: 5px;
+    border-radius: 35px;
+    border-width: 0px;
+    border-color: #3D3832;
+    height: 60px;
+    width: 60px;
+    background-color: #3D3832;
+    color: #F4F1E6;
+    font-size: 30px;
+}
+
+.multiply {
+    margin: 7px;
+    border-radius: 35px;
+    border-width: 0px;
+    border-color: #3D3832;
+    height: 60px;
+    width: 60px;
+    background-color: #3D3832;
+    color: #F4F1E6;
+    font-size: 35px;
+}
+
+.bottom_container {
+    background-color: #000000;
+    padding: 12px;
+    height: 370px;
+    width: 321px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.alignment {
+    height: 140px;
+    width: 341px;
+    border-width: 0px;
+    background-color: #232C2C;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: right;
+    color: white;
+    font-size: 35px;
+
+}
+
+.adjustment {
+    display: flex;
+    flex-direction: column;
+}
+
+.button_alignment {
+    margin: 7px;
+    border-radius: 25px;
+    border-width: 0px;
+    border-color: #000000;
+    height: 60px;
+    width: 60px;
+    background-color: #000000;
+    color: #F4F1E6;
+    font-size: 28px;
+    margin-bottom: 5px;
+    font-weight: 500;
+
+
+}
+
+.first-three-containers {
+    padding: 10px;
+    color: white;
+    align-items: stretch;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+}
+
+.equal_button {
+    margin: 7px;
+    margin-bottom: 5px;
+    border-radius: 35px;
+    border-width: 0px;
+    border-color: #05CFBF;
+    height: 60px;
+    width: 60px;
+    background-color: #05CFBF;
+    color: #F4F1E6;
+    font-size: 30px;
+}

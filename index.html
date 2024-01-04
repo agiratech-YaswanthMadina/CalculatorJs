@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link href="index.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+
+    <meta content="width=device-width">
+</head>
+
+<body>
+    <div class="container">
+
+        <div>
+            <header class="heading">CALCULATOR</header>
+        </div>
+
+        <div id="outputscreen" class="output">
+            <input type="text" autocomplete="off" class="alignment" id="maininput">
+            <div class="bottom_container">
+                <div>
+                    <button type="button" class="button_alignment" onclick="allClear()">AC</button>
+                    <button type="button" class="button_alignment" onclick="del()">Del</button>
+                    <button type="button" class="button_alignment" onclick="percentage()">%</button>
+                    <button type="button" class="last-column" onclick="symbol('/')">/</button>
+                </div>
+
+                <div>
+                    <button type="button" class="button_alignment" onclick="input('7')">7</button>
+                    <button type="button" class="button_alignment" onclick="input('8')">8</button>
+                    <button type="button" class="button_alignment" onclick="input('9')">9</button>
+                    <button type="button" class="multiply" onclick="symbol('*')">*</button>
+                </div>
+
+                <div>
+                    <button type="button" class="button_alignment" onclick="input('4')">4</button>
+                    <button type="button" class="button_alignment" onclick="input('5')">5</button>
+                    <button type="button" class="button_alignment" onclick="input('6')">6</button>
+                    <button type="button" class="last-column" onclick="symbol('+')">+</button>
+                </div>
+
+                <div>
+                    <button type="button" class="button_alignment" onclick="input('1')">1</button>
+                    <button type="button" class="button_alignment" onclick="input('2')">2</button>
+                    <button type="button" class="button_alignment" onclick="input('3')">3</button>
+                    <button type="button" class="last-column" onclick="symbol('-')">-</button>
+                </div>
+
+                <div>
+                    <button type="button" class="button_alignment" onclick="changesign()" id="plusminus">±</button>
+                    <button type="button" class="button_alignment" onclick="input('0')">0</button>
+                    <button type="button" class="button_alignment" onclick="input('.')">.</button>
+                    <button type="button" class="equal_button" onclick="cal()">=</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <hr class="rule" />
+            <p class="adjustment">Designed By Yaswanth Madina</p>
+        </div>
+    </div>
+
+</body>
+
+
+
+</html>
