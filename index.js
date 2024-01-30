@@ -6,7 +6,7 @@ let operators = [];
 let final = '';
 let temporary = null;
 function input(x) {
-    if(!isNaN(x)){
+    if (!isNaN(x)) {
         numbersArray.push(Number(x));
     }
     output.value += x;
@@ -32,12 +32,12 @@ function symbol(symbolStyle) {
 }
 
 function percentage() {
-        string = String((output.value) / 100);
-        output.value = string;
-     }
+    string = String((output.value) / 100);
+    output.value = string;
+}
 
 function del() {
-        output.value = output.value.slice(0, -1);
+    output.value = output.value.slice(0, -1);
 }
 
 function changesign() {
@@ -45,37 +45,37 @@ function changesign() {
     output.value = string;
 }
 
-function cal(){
+function cal() {
     let elements = temporary.match(/\d+|[/*+-]/g);
     console.log(elements);
     let precendence = ["/", "*", "+", "-"];
-    for(const operator of precendence){
-        for(let i=0; i<elements.length; i++){
-            if(elements[i] === operator){
-                let firstElement = elements[i-1];
-                let secondElement =  elements[i+1];
+    for (const operator of precendence) {
+        for (let i = 0; i < elements.length; i++) {
+            if (elements[i] === operator) {
+                let firstElement = elements[i - 1];
+                let secondElement = elements[i + 1];
                 let result = 0;
-                switch (operator){
+                switch (operator) {
                     case "-":
-                        result = (parseFloat(firstElement)-parseFloat(secondElement));
+                        result = (parseFloat(firstElement) - parseFloat(secondElement));
                         break;
                     case "+":
-                        result = (parseFloat(firstElement)+parseFloat(secondElement));
+                        result = (parseFloat(firstElement) + parseFloat(secondElement));
                         break;
                     case "/":
-                        result = (parseFloat(firstElement)/parseFloat(secondElement));
+                        result = (parseFloat(firstElement) / parseFloat(secondElement));
                         break;
                     case "*":
-                        result = (parseFloat(firstElement)*parseFloat(secondElement));
+                        result = (parseFloat(firstElement) * parseFloat(secondElement));
                         break;
-            }
-            elements.splice(i-1,3);
-            elements.splice(i-1,0,result);
-            console.log(elements);
-            console.log(result);
-            console.log(elements);
-            localStorage.setItem(temporary, result);
-            sessionStorage.setItem(temporary, result);
+                }
+                elements.splice(i - 1, 3);
+                elements.splice(i - 1, 0, result);
+                console.log(elements);
+                console.log(result);
+                console.log(elements);
+                localStorage.setItem(temporary, result);
+                sessionStorage.setItem(temporary, result);
             }
         }
     }
